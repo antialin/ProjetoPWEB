@@ -1,0 +1,237 @@
+/* CSS reset */
+*, *:before, *:after { 
+  margin:0;
+  padding:0;
+  font-family: tangerine,cursive;
+}
+
+body{
+  margin:10px;
+    /* Cor de fundo da página */
+ background: -webkit-gradient(linear, left top, right top, from(#39035B), to(#69005A));
+ background: -moz-linear-gradient(left, #CCCCCC, #000000);
+}
+
+a{
+  text-decoration: none;
+}
+
+/* esconde as ancoras da tela */
+a.links{
+  display: none;
+}
+
+/* content que contém os formulários */
+.content{
+  width: 500px;
+  margin: 110px auto;
+  position: relative; 
+}
+
+/* Dados do cabeçalho */
+h1{
+  font-size: 70px;
+  color: #69005A;
+  padding: 10px;
+  font-family: tangerine,cursive;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 30px;
+}
+h1:after{
+  /* Linha */
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 10px;
+  background: -webkit-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+  background: linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+}
+
+p{
+  margin-bottom:15px;
+}
+p:first-child{
+  margin: 0px;
+}
+label{
+  /* Nomes dos campos */
+  color: black;
+  position: relative;
+  font-size: 30px;
+}
+
+/**** advanced input styling ****/
+/* Caixa de texto */
+::-webkit-input-placeholder  {
+  color: #bebcbc;
+  font-size: 22px;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder{
+  color: #bebcbc;
+} 
+input {
+  outline: none;
+}
+
+input:not([type="checkbox"]){
+  /* Dimeções do campo */
+  width: 95%;
+  margin-top: 4px;
+  padding: 10px;  
+  border: 1px solid #c0c0c0;
+  
+  -webkit-border-radius: 3px;
+  border-radius: 4px;
+  
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+  box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+  
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.1s linear;
+}
+
+/* Estilo do botão enviar */
+input[type="submit"]{
+  width: 100%!important;
+  cursor: pointer;  
+  background: #69005A;
+  padding: 8px 5px;
+  color: #fff;
+  font-size: 28px;  
+  border: 1px solid #fff; 
+  margin-bottom: 10px;  
+  text-shadow: 0 1px 1px #333;
+  
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  
+  transition: all 0.1s linear;
+}
+ /* Cor do botão ao passar o mouse */
+input[type="submit"]:hover{
+  background: #A102FA;
+}
+
+/* Marcando os links para mudar de um formulário para outro */
+.link{
+  /* Parte de abaixo de cadastrar */
+  position: absolute;
+  background: #e1eaeb;
+  color: #001C84;
+  left: 0px;
+  height: 20px;
+  width: 440px;
+  padding: 17px 30px 20px 30px;
+  font-size: 25px;
+  text-align: right;
+  border-top: 1px solid #bebcbc;
+
+  -webkit-border-radius: 0 0  5px 5px;
+  border-radius: 0 0  5px 5px;
+}
+.link a {
+  font-weight: bold;
+  background: #69005A;
+  padding: 6px;
+  color: #FFFFFF;
+  margin-left: 10px;
+  border: 1px solid #69005A;
+
+  -webkit-border-radius: 4px;
+  border-radius: 4px;  
+
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.1s  linear;
+}
+/* Cor do botão (Ir para Login e Cadastre-se) ao passar o mouse */
+.link a:hover {
+  background: #A102FA;
+  border: 1px solid #A102FA;
+}
+
+/* Estilos para ambos os formulários */
+#cadastro, 
+#login{
+  position: absolute;
+  top: 0px;
+  width: 88%; 
+  padding: 18px 6% 60px 6%;
+  margin: 0 0 35px 0;
+  background: rgb(247, 247, 247);
+  border: 1px solid rgba(147, 184, 189,0.8);
+  
+  -webkit-box-shadow: 5px;
+  border-radius: 5px;
+  
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+}
+
+#paracadastro:target ~ .content #cadastro,
+#paralogin:target ~ .content #login{
+  z-index: 2;
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+
+  -webkit-animation-delay: .1s;
+  animation-delay: .1s;
+}
+#registro:target ~ .content #login,
+#paralogin:target ~ .content #cadastro{
+  -webkit-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
+}
+
+/*fadeInLeft*/
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/*fadeOutLeft*/
+@-webkit-keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+  }
+}
+
+@keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}

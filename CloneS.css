@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0px grayn;
+}
+
+img {
+  width: 100px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  color: green cyan;
+  letter-spacing: 0.1px;
+}
+
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  margin-bottom: 1.6rem;
+}
+
+h4, h5 {
+  font-family: 'Playfair Display', serif;
+}
+
+h4 {
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+  margin-bottom: 1.6rem;
+}
+
+h5 {
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+  margin-bottom: 1.6rem;
+}
+
+a:link {
+  color: #666;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #666;
+}
+
+a:hover {
+  color:cyan green;
+}
+
+a:active {
+  color: cyan green ;
+}
+
+button {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border: 1px solid #ccc;
+  background: white;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: crimson;
+  color: white;
+  cursor: pointer;
+}
+
+.solid {
+  font-size: 4rem;
+  line-height: 2rem;
+  color: #999;
+}
+
+/*start*/
+
+header{
+  background: #036635;;
+  color:white;
+  display: flex;
+  justify-content: space-between;
+  padding:0 10%;
+}
+
+header div{
+  font-weight: bold;
+  font-size;1rem;
+  line-height: 4rem;
+}
+
+header nav{
+  font-weight: bold;
+  font-size;1.5rem;
+  line-height: 4rem;
+}
+
+main{
+  height:450px;
+  background: url('https://media.glamour.com/photos/63628dba780dd126aac5f18e/4:3/w_931,h_698,c_limit/Starbucks%20Holiday%20Drinks%203.jpg')no-repeat;
+  background-size:  cover;
+  background-position:center center;
+  position: relative;
+  }
+
+main div{
+  position: absolute;
+  background: white;
+  width:80%;
+  height: 320px;
+  text-align: center;
+  bottom: 2rem;
+  margin:0 10%;
+  padding: 40px 20px;
+  opacity:0.7;
+  border-radius: 30px 30px 30px 30px;
+  color:black;
+}
+
+main h2{
+  margin-bottom:2rem;
+}
+
+main button{
+  margin-top: 2rem;
+}
+
+.products{
+  padding: 6rem 0;
+  background: #eee;
+  text-align: center;
+}
+
+.products h2{
+  margin-bottom: 2rem;
+ }
+
+.products div{
+  margin-top: 2rem;
+}
+
+.products a{
+  font-size:3rem;
+  color:#aaa;
+}
+
+.products img {
+  width: 80%;
+}
+
+.products img:hover{
+  border:5px solid gray;
+}
+
+.thought{
+  padding: 7rem 0;
+}
+
+.thought h2{
+  text-align: center;
+}
+
+
+.thought section{
+  margin: 4rem 0;
+  position: relative;
+}
+
+
+.thought>section>:first-child{
+  position: absolute;
+  background: white;
+  width:60%;
+  height: 180px;
+  text-align: center;
+  bottom: 0;
+  margin:0 20%;
+  padding: 40px;
+  opacity:0.7;
+  color:black;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.thought>:nth-child(2)>:last-child{
+   width: 80%;
+   height: 450px;
+  margin: 0 auto;
+  background: url('https://starbucks.com.br/public/img/home/partners.jpg')no-repeat;
+ background-size:cover;
+  background-position:center center;
+}
+ 
+.thought>:nth-child(3)>:last-child{
+   width: 80%;
+   height: 450px;
+  margin: 0 auto;
+  background: url('https://starbucks.com.br/public/img/home/featured-drinks.jpg')no-repeat;
+   background-size:cover;
+  background-position:center center;  
+}
+
+.thought>:nth-child(4)>:last-child{
+   width: 80%;
+   height: 450px;
+  margin: 0 auto;
+  background: url('https://starbucks.com.br/public/img/home/donate.jpg')no-repeat;
+ background-size:cover;
+  background-position:center center;
+}
+
+.icon {
+  background: #ccc;
+  display: flex;
+  padding:5rem 10%;
+  }
+
+.icon section{
+  width: 100%;
+  padding: 2rem 2%;
+  text-align: center;
+}
+
+.icon img{
+  width: 80px;
+  opacity:0.5;
+}
+
+.three{
+  background: #eee;
+  display: flex;
+  justify-content: space-between;
+}
+
+.three section{
+  width: 100%;
+  padding: 1.2rem 0;
+  text-align:center;
+  text-transform: uppercase;
+}
+
+footer{
+  padding:4rem 10%;
+  text-align: center;
+  background: #036635;
+  color:white;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<header>
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed" rel="stylesheet" type="text/css">
+</header>
+
+<body>
+  <main>
+    <div class="master-div-style">
+      <form id="survey-form" action="/do-something">
+        <div class="form-rows">
+             <h1 id="title">Formulário</h1>
+          <div class="labels">
+            <label for="name" id="name-label">Nome completo</label>
+          </div>
+          <div class="fields">
+            <input type="text" id="name" class="input-fields" placeholder="Digite seu nome" required>
+          </div>
+        </div>
+        <div class="form-rows">
+          <div class="labels">
+            <label for="email" id="email-label">Email</label>
+          </div>
+          <div class="fields">
+            <input type="email" id="email" class="input-fields" placeholder="Insira o seu endereço de email" required>
+          </div>
+        </div>
+        <div class="form-rows">
+          <div class="labels">
+            <label for="number" id="number-label">Qual sua data de nascimento?</label>
+          </div>
+          <div class="fields">
+            <input type="date" class="input-fields" name="begin" 
+        placeholder="dd-mm-yyyy" value=""
+        min="1900-01-01" max="9000-12-31">
+          </div>
+        </div>
+        <div class="form-rows">
+          <div class="labels">
+            <label for="dropdown" id="dropdown-label">Qual seu sexo?</label>
+          </div>
+          <div class="fields">
+            <select name="Sexo" id="dropdown" class="dropdown">
+              <option value="">
+              </option>
+                <option value="Fem">Feminino</option>
+                <option value="Masc">Masculino</option>
+                <option value="Não-binário">Não-binário</option>
+                <option value="Prefiro não informar">Prefiro não informar</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-rows">
+          <div class="number">
+            <label for="Telefone">Número de telefone:</label>
+            <input type="tel" class="input-fields" name="telefone" data-mask="(00) 00000-0000" data-mask-selectonfocus="true" />
+          </div>
+          
+         <div class="bottom-top-padding">
+          <div class="label-div">
+            <br>
+            <label>Quais tipos de fotos são do seu interesse?</label>
+          </div>
+          <div id="" class="input-div">
+            <label for="aniversário"><input id="aniversário" type="checkbox" name="aniversário" value="aniversário">Aniversário</label>
+            </br>
+            <label for="casamento"><input id="casamento" type="checkbox" name="casamento" value="casamento">Casamento</label>
+            </br>
+            <label for="15 anos"><input id="15 anos" type="checkbox" name="15 anos" value="15 anos">Ensaio de 15 anos</label>
+            </br>
+            <label for="casamento"><input id="casamento" type="checkbox" name="casamento" value="casamento">Pré Wedding</label>
+            </br>
+            <label for="outro"><input id="outro"  type="checkbox" name="outro" value="outro">Outro:<br>
+              <input type="text" id="name" class="input-fields" placeholder="Quais?" required>
+</label>
+            </br>
+          </div>
+        </div>
+      </form>
+    </div>
+<form>
+<div id="botao">
+<input type="submit" name="botao" value="Enviar" class="botaoEnviar" />
+</div>
+</form>
+  </main>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

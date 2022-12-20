@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Folha de presenças Dashboard | By Code Info</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome Cdn Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#" class="logo">
+          <img src="https://avatars.githubusercontent.com/u/40036396?v=4">
+          <span class="nav-item">Administrador</span>
+        </a></li>
+        <li><a href="#">
+          <i class="fas fa-menorah"></i>
+          <span class="nav-item">Dashboard</span>
+        </a></li>
+        <li><a href="#">
+          <i class="fas fa-comment"></i>
+          <span class="nav-item">Mensagem</span>
+        </a></li>
+        <li><a href="#">
+          <i class="fas fa-database"></i>
+          <span class="nav-item">Reportar</span>
+        </a></li>
+        <li><a href="#">
+          <i class="fas fa-chart-bar"></i>
+          <span class="nav-item">Lista de presenças</span>
+        </a></li>
+        <li><a href="#">
+          <i class="fas fa-cog"></i>
+          <span class="nav-item">Configurações</span>
+        </a></li>
+
+        <li><a href="#" class="logout">
+          <i class="fas fa-sign-out-alt"></i>
+          <span class="nav-item">Sair</span>
+        </a></li>
+      </ul>
+    </nav>
+
+
+    <section class="main">
+      <div class="main-top">
+        <h1>Lista de presenças</h1>
+        <i class="fas fa-user-cog"></i>
+      </div>
+      <div class="users">
+        <div class="card">
+          <img src="https://s.gravatar.com/avatar/04170364cfa8011bf09a95d86f37ebd9?s=400">
+          <h4>Diêviner Micauã</h4>
+          <p>Designer Gráfico</p>
+          <div class="per">
+            <table>
+              <tr>
+                <td><span>85%</span></td>
+                <td><span>87%</span></td>
+              </tr>
+              <tr>
+                <td>Mês</td>
+                <td>Ano</td>
+              </tr>
+            </table>
+          </div>
+          <button>Perfil</button>
+        </div>
+        <div class="card">
+          <img src="https://s.gravatar.com/avatar/a8fe130986b1d3643d2b69144298e728?s=400">
+          <h4>Antônia Aline</h4>
+          <p>Fotógrafa</p>
+          <div class="per">
+            <table>
+              <tr>
+                <td><span>82%</span></td>
+                <td><span>85%</span></td>
+              </tr>
+              <tr>
+                <td>Mês</td>
+                <td>Ano</td>
+              </tr>
+            </table>
+          </div>
+          <button>Perfil</button>
+        </div>
+        <div class="card">
+          <img src="https://s.gravatar.com/avatar/e626682b1fb8c64370b90ad6bc050c0d?s=400">
+          <h4>Ana Lara</h4>
+          <p>Programadora</p>
+          <div class="per">
+            <table>
+              <tr>
+                <td><span>85%</span></td>
+                <td><span>86%</span></td>
+              </tr>
+              <tr>
+                <td>Mês</td>
+                <td>Ano</td>
+              </tr>
+            </table>
+          </div>
+          <button>Perfil</button>
+        </div>
+        <div class="card">
+          <img src="https://s.gravatar.com/avatar/a2df0e59529ca98ab5814bcf7e74bfca?s=400">
+          <h4>Thayná</h4>
+          <p>Fotógrafa</p>
+          <div class="per">
+            <table>
+              <tr>
+                <td><span>85%</span></td>
+                <td><span>82%</span></td>
+              </tr>
+              <tr>
+                <td>Mês</td>
+                <td>Ano</td>
+              </tr>
+            </table>
+          </div>
+          <button>Perfil</button>
+        </div>
+      </div>
+
+      <section class="attendance">
+        <div class="attendance-list">
+          <h2>Folha de presenças</h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Departamento</th>
+                <th>Data</th>
+                <th>Horário de almoço</th>
+                <th>Fim de expediente</th>
+                <th>Detalhes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>01</td>
+                <td>Diêviner Micauã</td>
+                <td>Design</td>
+                <td>16-12-22</td>
+                <td>11:00AM</td>
+                <td>4:00PM</td>
+                <td><button>Visualizar</button></td>
+              </tr>
+              <tr class="active">
+                <td>02</td>
+                <td>Antônia Aline</td>
+                <td>Fotografia</td>
+                <td>16-12-22</td>
+                <td>11:30AM</td>
+                <td>4:00PM</td>
+                <td><button>Visualizar</button></td>
+              </tr>
+              <tr>
+                <td>03</td>
+                <td>Ana Lara</td>
+                <td>Codificação</td>
+                <td>16-12-22</td>
+                <td>12:00PM</td>
+                <td>4:00PM</td>
+                <td><button>Visualizar</button></td>
+              </tr>
+              <tr>
+                <td>04</td>
+                <td>Thayná</td>
+                <td>Fotografia</td>
+                <td>16-12-22</td>
+                <td>12:30AM</td>
+                <td>4:00PM</td>
+                <td><button>Visualizar</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+  </div>
+
+</body>
+</html>

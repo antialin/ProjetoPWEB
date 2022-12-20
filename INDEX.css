@@ -1,0 +1,54 @@
+body {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  background: -webkit-gradient(linear, left top, right top, from(#39035B), to(#69005A));
+background: -moz-linear-gradient(left, #CCCCCC, #000000);
+}
+button {
+
+    width: 200px;
+
+    height: 70px;
+
+    font-size: 22px;
+
+    font-family: tahoma;
+
+    border:none;
+
+    border-radius: 7%;
+
+    background-color: orange;
+
+    color: white;
+
+    cursor:pointer;
+ 
+}
+
+ 
+h1 {
+    color: orange
+
+}
+}
+}
+
+button:hover{
+
+    background-color: darkblue;
+
+    Color: #fff;
+
+    width: 220px;
+
+    height: 75px;
+
+    font-size: 25px;
+
+    border-radius: 0;
+
+    transition-duration: 1s;
+
+} 

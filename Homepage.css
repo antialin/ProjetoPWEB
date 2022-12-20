@@ -1,0 +1,390 @@
+body {
+  padding-top: 55px;
+}
+/* Barra de navegação */
+#navigation {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  display: inline-block;
+  width: 100%;
+  height: 55px;
+  top: 0;
+  left: 0;
+/* Linha sutil abaixo da barra de navegação */
+  box-shadow: 0 1px 6px #69005A;
+/* Cor da barra de navegação */
+  background: #69005A;
+/* Linha sutil acima da barra de navegação */
+  border-top: 1px solid #69005A;
+  border-bottom: 1px solid #e6e7e8;
+}
+#navigation .navlinks {
+  list-style: none;
+}
+#navigation .navlinks li {
+  display: inline-block;
+  margin-right: 5px;
+}
+#navigation .navlinks li a {
+  display: block;
+  float: left;
+  padding: 0 12px;
+  line-height: 55px;
+  font-weight: bold;
+  text-decoration: none;
+/* Cor da letra na barra de navegação */
+  color: #FFFFFF;
+}
+#navigation .navlinks li a:hover {
+  text-decoration: none;
+/* Cor da letra na barra de navegação quando o mouse passa em cima */
+  color: #000000;
+/* Cor do quadrado na barra de navegação quando o mouse passa em cima */
+  background: #fcfcfc;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
+
+/* Tipo de letra dos títulos e subtítulos */
+*{
+  font-family: Lucida Handwriting, cursive;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Tira o sublinhado embaixo dos botões */
+a{
+  text-decoration: none;
+}
+/* GLOBAL */
+
+p{
+/* Referente aos textos menores */
+  color: #767676;
+  line-height:23px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.btn {
+/* Cor das letras dentro dos botões */
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: 500;
+/* Cor dos botões */
+    background-color: #daa37f;
+    border-radius: 0;
+    text-align: center;
+  text-transform: uppercase;
+}
+
+.btn--opacity {
+    animation: opacity 3s;
+}
+
+.sect {
+    padding: 130px 0;
+}
+.sect--brown{
+  background-color: #1d140b;
+}
+
+.sect--grey{
+  background-color: #ebebeb;
+}
+
+.sect--no-bottom{
+  padding-bottom: 0;
+}
+
+.sect--white-text{
+  color: #fff;
+}
+.col--inbl{
+  display: inline-block;
+   float: none;
+}
+.row--center{
+  text-align: center;
+
+}
+.row--small {
+  max-width: 960px;
+  margin:0 auto;
+}
+
+.row--margin{
+  margin-top: 65px;
+}
+/* ANIMAÇÃO */
+@-webkit-keyframes banner-in {
+  0% {  
+    background-color:rgba(0,0,0,1);
+  }
+  100% { 
+     background-color:rgba(0,0,0,0.5);
+  }
+}
+@-moz-keyframes banner-in {
+  0% {  
+    background-color:rgba(0,0,0,1);
+  }
+  100% { 
+     background-color:rgba(0,0,0,0.5);
+  }
+}
+@-o-keyframes banner-in {
+  0% {  
+    background-color:rgba(0,0,0,1);
+  }
+  100% { 
+     background-color:rgba(0,0,0,0.5);
+  }
+}
+@keyframes banner-in {
+  0% {  
+    background-color:rgba(0,0,0,1);
+  }
+  100% { 
+     background-color:rgba(0,0,0,0.5);
+  }
+}
+
+@-webkit-keyframes opacity {
+  0% {  
+    opacity:0;
+  }
+  100% { 
+     opacity:1;
+  }
+}
+@-moz-keyframes opacity {
+  0% {  
+    opacity:0;
+  }
+  100% { 
+     opacity:1;
+  }
+}
+@-o-keyframes opacity {
+  0% {  
+    opacity:0;
+  }
+  100% { 
+     opacity:1;
+  }
+}
+@keyframes opacity {
+  0% {  
+    opacity:0;
+  }
+  100% { 
+     opacity:1;
+  }
+}
+
+/* BANNER */
+.banner{
+/* Primeira imagem */
+    background-image: url('https://s.gravatar.com/avatar/2c8fd76da70b7b6cd1db8fadeb92f0af?s=400');
+  background-color:#000;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.banner__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: table;
+    height: 100%;
+    text-align:center;
+    animation: banner-in 2s ;
+}
+
+.banner__container {
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+.banner__text {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Lucida Handwriting, cursive;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 18px;
+    text-align: right;
+    vertical-align: text-bottom;
+}
+
+/* Projetos */
+
+.projects-img {
+/* Segunda imagem */
+    background-image: url('https://s.gravatar.com/avatar/06486bfbce796f2083eae17fcde65430?s=600');
+    height: 0;
+    padding-bottom: 52%;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #1d140b;
+}
+
+.footer {
+  display: table;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.footer__half {
+    width: 50%;
+    display: table-cell;
+    padding: 100px 140px;
+}
+
+.footer__half-1 {
+    background-image: url('https://i.ibb.co/pjBDz5f/C-mera.jpg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer__half-2 {
+    background-color: #000;
+}
+
+.footer__big-title {
+    margin-top: 0;
+    text-transform: uppercase;
+    line-height: 40px;
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+.footer__title {
+    letter-spacing: 1px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #daa37f;
+}
+
+.footer__desc {
+    color: #d7d7d7;
+    margin-bottom: 25px;
+}
+/* RESPONSIVE */
+
+@media screen and (max-width:1024px){
+  .sect{
+    padding:100px 0;
+  }
+  .row--margin {
+    margin-top: 55px;
+}
+  .banner__title {
+    font-size: 54px;
+  }
+  .sect--no-bottom{
+    padding-bottom:0px !important;
+  }
+  .footer__half {
+    padding: 90px 120px;
+  }
+  .sect-t-footer{
+    display:none;
+  }
+  .footer{
+    position:relative;
+  }
+}
+
+
+@media screen and (max-width:991px){
+  .sect{
+    padding:80px 0;
+  }
+   .banner__title {
+    font-size: 50px;
+  }
+  .row--margin {
+    margin-top: 45px;
+}
+  
+  .sect__title, .description__title, .footer__big-title {
+    line-height: 38px;
+    font-size: 28px;
+  }
+  .footer__half {
+    padding: 60px 90px;
+}
+  
+}
+
+@media screen and (max-width:767px){
+  .banner__title {
+    font-size: 48px;
+}
+  .sect{
+    padding:60px 0;
+  }
+  .row--margin {
+    margin-top: 30px;
+}
+
+  .sect__title, .description__title, .footer__big-title {
+    line-height: 36px;
+    font-size: 26px;
+  }
+  .footer__half {
+    width: 100%;
+    display: block;
+    padding: 50px 50px;
+  }
+}
+
+@media screen and (max-width:480px){
+  .banner__title {
+    font-size: 44px;
+  }
+  .sect{
+    padding:50px 0;
+  }
+  .sect__title, .description__title {
+    line-height: 30px;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .sect__subtitle{
+    padding:0;
+  }
+  .row--margin {
+    margin-top: 15px;
+  }
+  .footer__half {
+    padding: 35px 35px;
+}
+  .footer__desc {
+    margin-bottom: 10px;
+}
+  
+}
